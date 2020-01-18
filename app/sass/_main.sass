@@ -33,7 +33,7 @@ body
     padding: 32px 0 31px
 
     &__inner
-      @include flex
+      +flex
       justify-content: space-between
       align-items: center
 
@@ -42,7 +42,7 @@ body
     padding-left: 45px
 
     &::before
-      @include pseudo
+      +pseudo
       width: 35px
       height: 35px
       top: 6px
@@ -68,7 +68,7 @@ body
     position: relative
 
     &::before
-      @include pseudo
+      +pseudo
       width: 35px
       height: 35px
       top: 0
@@ -100,7 +100,7 @@ body
   overflow: hidden
 
   &-items
-    @include flex
+    +flex
 
   &__item
     flex-grow: 1
@@ -147,7 +147,7 @@ body
     margin-bottom: 80px
 
   &-items
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
     margin-bottom: 72px
@@ -156,7 +156,7 @@ body
     width: calc(50% - 15px)
 
     &-image-part
-      @include flex
+      +flex
       justify-content: center
       align-items: flex-end
       min-height: 61px
@@ -173,7 +173,7 @@ body
     margin: auto
 
     &::before, &::after
-      @include dark($yellow)
+      +dark($yellow)
 
 h2
   color: #ffffff
@@ -195,7 +195,7 @@ h2
     margin-bottom: 72px
 
   &-items
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
 
@@ -232,7 +232,7 @@ h2
         opacity: .9
 
     &::before
-      @include pseudo
+      +pseudo
       top: 0
       left: 0
       width: 100%
@@ -248,7 +248,7 @@ h2
       height: 100%
       top: 0
       left: 0
-      @include flex
+      +flex
       justify-content: center
       align-items: center
 
@@ -296,7 +296,7 @@ h2
         transition: .5s ease
 
       &::before, &::after
-        @include pseudo
+        +pseudo
         transition: .5s ease
 
       &::before
@@ -322,7 +322,7 @@ h2
   padding: 37px 0 43px
 
   &__inner
-    @include flex
+    +flex
     justify-content: space-between
     align-items: center
 
@@ -376,11 +376,21 @@ h2
     margin-bottom: 52px
 
   &-items
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
     padding: 0 100px
     margin-bottom: 71px
+    position: relative
+
+    &::before
+      +pseudo
+      width: 2px
+      height: 178px
+      background: url('../img/restored-line.png') no-repeat
+      top: 40px
+      left: 50%
+      transform: transitionX(-50%)
 
   &__item
     width: calc(50% - 15px)
@@ -405,7 +415,7 @@ h2
     margin-bottom: 51px
 
   &-items
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
 
@@ -430,7 +440,7 @@ h2
     margin-bottom: 52px
 
   &-items
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
 
@@ -443,7 +453,7 @@ h2
       background-color: $grey-bg
       border-radius: 50%
       margin: auto
-      @include flex
+      +flex
       justify-content: center
       align-items: center
       margin-bottom: 29px
@@ -460,7 +470,7 @@ h2
     margin-bottom: 52px
 
   &-items
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
 
@@ -491,7 +501,7 @@ h2
           font-weight: 700
 
         &::before
-          @include pseudo
+          +pseudo
           width: 30px
           height: 23px
           top: -2px
@@ -527,7 +537,7 @@ h2
       margin-bottom: 41px
 
     &__stage
-      @include flex
+      +flex
       justify-content: space-between
       align-items: flex-start
 
@@ -575,7 +585,7 @@ h2
       transition: .5s ease
 
       &::before, &::after
-        @include pseudo
+        +pseudo
         width: 20px
         height: 20px
         top: 4px
@@ -618,7 +628,7 @@ h2
       border-radius: 30px
 
       &::before, &::after
-        @include dark($yellow)
+        +dark($yellow)
 
 .main-footer
 
@@ -626,7 +636,7 @@ h2
     padding: 45px 0 36px
 
     &__inner
-      @include flex
+      +flex
       justify-content: space-between
       align-items: center
 
@@ -635,7 +645,7 @@ h2
       margin-top: -8px
 
   &__contacts
-    @include flex
+    +flex
     justify-content: space-between
     align-items: flex-start
     width: 770px
@@ -645,7 +655,7 @@ h2
     padding: 4px 0 0 45px
 
     &::before
-      @include pseudo
+      +pseudo
       width: 35px
       height: 35px
       top: 0
@@ -702,7 +712,7 @@ h2
     background-color: #e6e8ee
 
     &__inner
-      @include flex
+      +flex
       justify-content: space-between
       align-items: center
 

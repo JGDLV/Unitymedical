@@ -60,6 +60,9 @@
   .restored
     padding: 30px 0
 
+    &__item
+      width: calc(50% - 30px)
+
   .warranty
     padding: 30px 0
 
@@ -206,6 +209,9 @@
 @media (max-width: 550px)
   .restored-items
     margin-bottom: 30px
+
+    &::before
+      content: none
 
   .restored__item
     width: 100%
